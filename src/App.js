@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+
+/*
+ * Project final hand-in: Javascript File App.js
+ * 
+ * Authors: Juan José Gómez Villegas (u1987338@campus.udg.edu)
+ * 
+ * Date: 2025-12-01
+ */
+
 import './App.css';
+import Header from './components/Header.js';
+import Footer from './components/Footer.js';
+import Slider from './components/Slider.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Header />
+      <div className='App-Content'>
+        <Slider />
+        <div className='App-Sections'>
+          Aquí van la resta de seccions
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 }
