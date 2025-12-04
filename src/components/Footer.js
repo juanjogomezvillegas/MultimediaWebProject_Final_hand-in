@@ -7,10 +7,17 @@
  * Date: 2025-12-01
  */
 
-function Footer() {
+function Footer({flags}) {
     return (
         <footer className="Footer">
-            <p>Aquí va un footer</p>
+            <div>
+                <p>Juan José Gómez Villegas &copy; 2025</p>
+            </div>
+            <div>
+                {flags.map((item, index) => (
+                    <img className="flags" key={index} src={item[0]} alt={item[1]} title={item[1]} />
+                ))}
+            </div>
         </footer>
     );
 }
