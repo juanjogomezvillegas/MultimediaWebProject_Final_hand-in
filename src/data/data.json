@@ -13,7 +13,12 @@
                 "title": "Descobreix Figueres", 
                 "description": "L'epicentre del territori de l'Alt Empordà, els seus principals atractius són el paisatge, la cultura, la història i el vent de tramuntana. Està situada a quinze quilòmetres del mar Mediterrani, als peus dels Pirineus i envoltada per tres parcs naturals."
             }, 
-            "distances": [["","A 15 km del Mar Mediterrani"],["","L'epicentre de l'Alt Empordà"],["","A 30 minuts de Girona"],["","A 1 hora de Barcelona"],["","A 2 hores de Tarragona"],["","A 2 hores de Lleida"]], 
+            "distances": [["./multimedia_files/images/sea.png","A 15 km del Mar Mediterrani"],
+                          ["./multimedia_files/images/world.png","L'epicentre de l'Alt Empordà"],
+                          ["./multimedia_files/images/roadGirona.png","A 30 minuts de Girona"],
+                          ["./multimedia_files/images/roadBcnTarragona.png","A 1 hora de Barcelona"],
+                          ["./multimedia_files/images/roadBcnTarragona.png","A 2 hores de Tarragona"],
+                          ["./multimedia_files/images/roadLleida.png","A 2 hores de Lleida"]], 
             "places": {
                 "title": "Llocs d'interès", 
                 "list": {}
@@ -34,7 +39,12 @@
                 "title": "Descubre Figueres", 
                 "description": "El epicentro del territorio del Alt Empordà, sus principales atractivos son el paisaje, la cultura, la historia y el viento de tramontana. Está situada a quince kilómetros del mar Mediterráneo, a los pies de los Pirineos y rodeada por tres parques naturales."
             }, 
-            "distances": [["","A 15 km del Mar Mediterráneo"],["","El epicentro del Alt Empordà"],["","A 30 minutos de Girona"],["","A 1 hora de Barcelona"],["","A 2 horas de Tarragona"],["","A 2 horas de Lleida"]], 
+            "distances": [["./multimedia_files/images/sea.png","A 15 km del Mar Mediterráneo"],
+                          ["./multimedia_files/images/world.png","El epicentro del Alt Empordà"],
+                          ["./multimedia_files/images/roadGirona.png","A 30 minutos de Girona"],
+                          ["./multimedia_files/images/roadBcnTarragona.png","A 1 hora de Barcelona"],
+                          ["./multimedia_files/images/roadBcnTarragona.png","A 2 horas de Tarragona"],
+                          ["./multimedia_files/images/roadLleida.png","A 2 horas de Lleida"]], 
             "places": {
                 "title": "Lugares de interés", 
                 "list": {}
@@ -55,7 +65,12 @@
                 "title": "Discover Figueres", 
                 "description": "The epicenter of the Alt Empordà territory, its main attractions are the landscape, culture, history and the north wind. It is located fifteen kilometers from the Mediterranean Sea, at the foot of the Pyrenees and surrounded by three natural parks."
             }, 
-            "distances": [["","15 km from the Mediterranean Sea"],["","The epicenter of Alt Empordà"],["","30 minutes from Girona"],["","1 hour from Barcelona"],["","2 hours from Tarragona"],["","2 hours from Lleida"]], 
+            "distances": [["./multimedia_files/images/sea.png","15 km from the Mediterranean Sea"],
+                          ["./multimedia_files/images/world.png","The epicenter of Alt Empordà"],
+                          ["./multimedia_files/images/roadGirona.png","30 minutes from Girona"],
+                          ["./multimedia_files/images/roadBcnTarragona.png","1 hour from Barcelona"],
+                          ["./multimedia_files/images/roadBcnTarragona.png","2 hours from Tarragona"],
+                          ["./multimedia_files/images/roadLleida.png","2 hours from Lleida"]], 
             "places": {
                 "title": "Places of interest", 
                 "list": {}
@@ -76,7 +91,12 @@
                 "title": "Découvrez Figueres", 
                 "description": "L'épicentre du territoire de l'Alt Empordà, ses principales attractions sont le paysage, la culture, l'histoire et le vent de tramontane. Elle est située à quinze kilomètres de la mer Méditerranée, au pied des Pyrénées et entourée de trois parcs naturels."
             }, 
-            "distances": [["","À 15 km de la mer Méditerranée"],["","L'épicentre de l'Alt Empordà"],["","A 30 minutes de Gérone"],["","A 1 heure de Barcelone"],["","A 2 heures de Tarragone"],["","A 2 heures de Lleida"]], 
+            "distances": [["./multimedia_files/images/sea.png","À 15 km de la mer Méditerranée"],
+                          ["./multimedia_files/images/world.png","L'épicentre de l'Alt Empordà"],
+                          ["./multimedia_files/images/roadGirona.png","A 30 minutes de Gérone"],
+                          ["./multimedia_files/images/roadBcnTarragona.png","A 1 heure de Barcelone"],
+                          ["./multimedia_files/images/roadBcnTarragona.png","A 2 heures de Tarragone"],
+                          ["./multimedia_files/images/roadLleida.png","A 2 heures de Lleida"]], 
             "places": {
                 "title": "Lieux d'intérêt", 
                 "list": {}

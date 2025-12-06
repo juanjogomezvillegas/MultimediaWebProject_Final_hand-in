@@ -10,8 +10,12 @@
 function Presentation({data}) {
     return (
         <div className="Presentation">
-            <h1>{data["title"]}</h1>
-            <p>{data["description"]}</p>
+            <div>
+                <h1>{data["title"]}</h1>
+            </div>
+            <div>
+                <p>{data["description"]}</p>
+            </div>
         </div>
     );
 }

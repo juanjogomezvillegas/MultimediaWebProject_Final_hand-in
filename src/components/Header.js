@@ -9,8 +9,8 @@
 
 function Header({data, lang, handleLangChange}) {
     return (
-        <div id="top" role="section top" aria-label="section top">
-            <header role="header" aria-label="header">
+        <div id="top" aria-label="section top of the page">
+            <header aria-label="header of the page">
                 <select name="changeLang" aria-label="button change language" id="selChangeLang" value={lang} onChange={handleLangChange}>
                     <option value="ca">Català</option>
                     <option value="es">Castellano</option>
@@ -18,9 +18,9 @@ function Header({data, lang, handleLangChange}) {
                     <option value="fr">Français</option>
                 </select>
             </header>
-            <nav id="navbar" role="navigation bar" aria-label="navigation bar">
+            <nav id="navbar" aria-label="navigation bar">
                 <div>
-                    <a href="." ><img src="./multimedia_files/images/flagVillage.png" /></a>
+                    <a href="."><img alt="home" src="./multimedia_files/images/flagVillage.png" /></a>
                     {data["itemsNavbar"].map((item, index) => (
                         <a key={index} className="elementmenu" id={item[0]} href={item[0]}>{item[1]}</a>
                     ))}

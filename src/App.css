@@ -97,14 +97,23 @@ nav a.elementmenu:hover {
 
 .Presentation {
   display: flex;
-  justify-content: center;
-  margin: 25px 75px 25px 75px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .Distances {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   padding: 15px;
   background-color: var(--colorPrimary);
   color: var(--textColorPrimary);
+}
+
+.Distances img {
+  width: 50px;
 }
 
 .Section {
@@ -156,4 +165,17 @@ h2 {
 
 @media only screen and (max-width: 860px) {
   /* FOR MOBILE PHONE */
+  .Presentation {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Distances {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Distances img {
+    width: 75px;
+  }
 }
