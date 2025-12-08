@@ -93,6 +93,33 @@ nav a.elementmenu:hover {
 
 /* SLIDER STYLES */
 
+.Slider div#controlSlaider > button#prevImg {
+  position: absolute;
+  top: 400px;
+  left: 10px;
+}
+
+.Slider div#controlSlaider > button#nextImg {
+  position: absolute;
+  top: 400px;
+  right: 10px;
+}
+
+.Slider div#controlSlaider > button {
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5%;
+  border: 0px;
+  background-color: var(--colorPrimary);
+  color: var(--textColorPrimary);
+  transition: all .5s;
+}
+
+.Slider div#controlSlaider > button:hover {
+  transition: all .5s;
+  border-radius: 10px;
+}
+
 /* SECTIONS STYLES */
 
 .Presentation {

@@ -10,7 +10,7 @@
 function Activities({data}) {
     return (
         <div className="Section Activities">
-           <h1>{data["title"]}</h1>
+           <h1 id={data["id"]}>{data["title"]}</h1>
         </div>
     );
 }

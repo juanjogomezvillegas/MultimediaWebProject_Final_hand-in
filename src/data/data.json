@@ -1,5 +1,9 @@
 {
     "title": "Figueres, Girona",  
+    "slider": {
+        "image1": "./multimedia_files/images/imgSlaider.png",  
+        "video": "./multimedia_files/videos/presentation.mp4"
+    }, 
     "flags": [
         ["./multimedia_files/images/flagVillage.png", "flag Village"],
         ["./multimedia_files/images/flagRegion.png", "flag Region"],
@@ -7,7 +11,7 @@
         ["./multimedia_files/images/flagCountry.png", "flag Country"],
         ["./multimedia_files/images/flagEU.png", "flag EU"]], 
     "ca": {
-        "itemsNavbar": [["#placesInterest","Què visitar?"],["#activities","Què fer?"],["#location","On és?"]], 
+        "itemsNavbar": [["#aboutInfo","Sobre Figueres"],["#activities","Activitats"],["#location","Ubicació"]], 
         "sections": {
             "presentation": {
                 "title": "Descobreix Figueres", 
@@ -19,21 +23,22 @@
                           ["./multimedia_files/images/roadBcnTarragona.png","A 1 hora de Barcelona"],
                           ["./multimedia_files/images/roadBcnTarragona.png","A 2 hores de Tarragona"],
                           ["./multimedia_files/images/roadLleida.png","A 2 hores de Lleida"]], 
-            "places": {
-                "title": "Llocs d'interès", 
-                "list": {}
+            "aboutInfo": {
+                "title": "Sobre Figueres", 
+                "id": "aboutInfo"
             }, 
             "activities": {
                 "title": "Activitats", 
-                "list": {}
+                "id": "activities"
             }, 
             "location": {
-                "title": "Ubicació"
+                "title": "Ubicació", 
+                "id": "location"
             }
         }
     }, 
     "es": {
-        "itemsNavbar": [["#placesInterest","Qué visitar?"],["#activities","Qué hacer?"],["#location","Dónde es?"]], 
+        "itemsNavbar": [["#aboutInfo","Sobre Figueres"],["#activities","Actividades"],["#location","Ubicación"]], 
         "sections": {
             "presentation": {
                 "title": "Descubre Figueres", 
@@ -45,21 +50,22 @@
                           ["./multimedia_files/images/roadBcnTarragona.png","A 1 hora de Barcelona"],
                           ["./multimedia_files/images/roadBcnTarragona.png","A 2 horas de Tarragona"],
                           ["./multimedia_files/images/roadLleida.png","A 2 horas de Lleida"]], 
-            "places": {
-                "title": "Lugares de interés", 
-                "list": {}
+            "aboutInfo": {
+                "title": "Sobre Figueres", 
+                "id": "aboutInfo"
             }, 
             "activities": {
                 "title": "Actividades", 
-                "list": {}
+                "id": "activities"
             }, 
             "location": {
-                "title": "Ubicación"
+                "title": "Ubicación", 
+                "id": "location"
             }
         }
     }, 
     "en": {
-        "itemsNavbar": [["#placesInterest","What to visit?"],["#activities","What to do?"],["#location","Where is it?"]], 
+        "itemsNavbar": [["#aboutInfo","About Figueres"],["#activities","Activities"],["#location","Location"]], 
         "sections": {
             "presentation": {
                 "title": "Discover Figueres", 
@@ -71,21 +77,22 @@
                           ["./multimedia_files/images/roadBcnTarragona.png","1 hour from Barcelona"],
                           ["./multimedia_files/images/roadBcnTarragona.png","2 hours from Tarragona"],
                           ["./multimedia_files/images/roadLleida.png","2 hours from Lleida"]], 
-            "places": {
-                "title": "Places of interest", 
-                "list": {}
+            "aboutInfo": {
+                "title": "About Figueres", 
+                "id": "aboutInfo"
             }, 
             "activities": {
                 "title": "Activities", 
-                "list": {}
+                "id": "activities"
             }, 
             "location": {
-                "title": "Location"
+                "title": "Location", 
+                "id": "location"
             }
         }
     }, 
     "fr": {
-        "itemsNavbar": [["#placesInterest","Que visiter?"],["#activities","Que faire?"],["#location","Où est-ce?"]], 
+        "itemsNavbar": [["#aboutInfo","Info sur Figueres"],["#activities","Activités"],["#location","Emplacement"]], 
         "sections": {
             "presentation": {
                 "title": "Découvrez Figueres", 
@@ -97,16 +104,17 @@
                           ["./multimedia_files/images/roadBcnTarragona.png","A 1 heure de Barcelone"],
                           ["./multimedia_files/images/roadBcnTarragona.png","A 2 heures de Tarragone"],
                           ["./multimedia_files/images/roadLleida.png","A 2 heures de Lleida"]], 
-            "places": {
-                "title": "Lieux d'intérêt", 
-                "list": {}
+            "aboutInfo": {
+                "title": "Informations sur Figueres", 
+                "id": "aboutInfo"
             }, 
             "activities": {
                 "title": "Activités", 
-                "list": {}
+                "id": "activities"
             }, 
             "location": {
-                "title": "Emplacement"
+                "title": "Emplacement", 
+                "id": "location"
             }
         }
     }

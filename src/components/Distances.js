@@ -10,8 +10,8 @@
 function Distances({data}) {
     return (
         <div className="Distances">
-            {data.map((item) => (
-                <div>
+            {data.map((item, index) => (
+                <div key={index}>
                     <img alt={item[1]} title={item[1]} src={item[0]} />
                     <h2>{item[1]}</h2>
                 </div>
