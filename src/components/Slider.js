@@ -21,8 +21,8 @@ function Slider({data, currImg, changeImg}) {
                 </video>}
             </div>
             <div id="controlSlaider">
-                <button id="prevImg" onClick={changeImg}><i class="fa fa-arrow-left"></i></button>
-                <button id="nextImg" onClick={changeImg}><i class="fa fa-arrow-right"></i></button>
+                <button title="previousImage" aria-label="previous image" id="prevImg" onClick={changeImg}><i class="fa fa-arrow-left"></i></button>
+                <button title="nextImage" aria-label="next image" id="nextImg" onClick={changeImg}><i class="fa fa-arrow-right"></i></button>
             </div>
         </div>
     );

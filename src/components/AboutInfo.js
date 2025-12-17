@@ -9,7 +9,7 @@
 
 function AboutInfo({data}) {
     return (
-        <div className="Section AboutInfo">
+        <div role="tabpanel" aria-labelledby="aboutInfo" className="Section AboutInfo">
             <h1 id={data["id"]}>{data["title"]}</h1>
         </div>
     );

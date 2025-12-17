@@ -9,7 +9,7 @@
 
 function Activities({data}) {
     return (
-        <div className="Section Activities">
+        <div role="tabpanel" aria-labelledby="activities" className="Section Activities">
            <h1 id={data["id"]}>{data["title"]}</h1>
         </div>
     );
