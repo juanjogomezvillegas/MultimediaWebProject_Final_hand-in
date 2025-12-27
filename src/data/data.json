@@ -1,8 +1,8 @@
 {
     "title": "Figueres, Girona",  
     "slider": {
-        "image1": "./multimedia_files/images/imgSlaider.png",  
-        "video": "./multimedia_files/videos/presentation.mp4"
+        "image1": ["./multimedia_files/images/imgSlaider.png","image 1 to Slaider"],  
+        "video": ["./multimedia_files/videos/presentation.mp4","Browser does not support video"]
     }, 
     "flags": [
         ["./multimedia_files/images/flagVillage.png", "flag Village"],
@@ -10,8 +10,14 @@
         ["./multimedia_files/images/flagProvince.png", "flag Province"],
         ["./multimedia_files/images/flagCountry.png", "flag Country"],
         ["./multimedia_files/images/flagEU.png", "flag EU"]], 
+    "products": [
+        { "id": 1, "name": "Samarreta UdG", "price": 20 },
+        { "id": 2, "name": "Tassa UdG", "price": 12 },
+        { "id": 3, "name": "Adhesius UdG", "price": 5 },
+        { "id": 4, "name": "Dessuadora UdG", "price": 45 }
+    ], 
     "ca": {
-        "itemsNavbar": [["#aboutInfo","Sobre Figueres"],["#activities","Activitats"],["#location","Ubicació"]], 
+        "itemsNavbar": [["#aboutInfo","Sobre Figueres"],["#activities","Activitats"],["#location","Ubicació"], ["#history","Història"]], 
         "sections": {
             "presentation": {
                 "title": "Descobreix Figueres", 
@@ -25,7 +31,42 @@
                           ["./multimedia_files/images/roadLleida.png","A 2 hores de Lleida"]], 
             "aboutInfo": {
                 "title": "Sobre Figueres", 
-                "id": "aboutInfo"
+                "id": "aboutInfo", 
+                "info": {
+                    "place": {
+                        "title": "Lloc", 
+                        "data": [
+                            ["Estat","Espanya"],
+                            ["Comunitat autònoma","Catalunya"],
+                            ["Àmbit territorial","Comarques Gironines"],
+                            ["Comarca","Alt Empordà (Capital de la comarca)"]]
+                    }, 
+                    "humanPopulation": {
+                        "title": "Població humana", 
+                        "data": [
+                            ["Població","48875 (2024), (2532,38 hab/km2)"],
+                            ["Gentilici","Figuerenc, Figuerenca"]]
+                    }, 
+                    "geography": {
+                        "title": "Geografia", 
+                        "data": [
+                            ["Superfície","19.3 km2"],
+                            ["Banyat per","Manol"],
+                            ["Altitud","39 m"]]
+                    }, 
+                    "descriptiveIden": {
+                        "title": "Identificadors descriptius", 
+                        "data": [
+                            ["Codi Postal",17600],
+                            ["Ús Horari","UTC+01:00 i UTC+02:00"],
+                            ["Codi INE",17066],
+                            ["Codi IDESCAT",170669]]
+                    }, 
+                    "webPortal": {
+                        "title": "Portal web", 
+                        "data": "https://www.figueres.cat/"
+                    }
+                }
             }, 
             "activities": {
                 "title": "Activitats", 
@@ -38,7 +79,7 @@
         }
     }, 
     "es": {
-        "itemsNavbar": [["#aboutInfo","Sobre Figueres"],["#activities","Actividades"],["#location","Ubicación"]], 
+        "itemsNavbar": [["#aboutInfo","Sobre Figueres"],["#activities","Actividades"],["#location","Ubicación"],["#history","Historia"]], 
         "sections": {
             "presentation": {
                 "title": "Descubre Figueres", 
@@ -52,7 +93,42 @@
                           ["./multimedia_files/images/roadLleida.png","A 2 horas de Lleida"]], 
             "aboutInfo": {
                 "title": "Sobre Figueres", 
-                "id": "aboutInfo"
+                "id": "aboutInfo", 
+                "info": {
+                    "place": {
+                        "title": "Lugar", 
+                        "data": [
+                            ["Estado","España"],
+                            ["Comunidad autónoma","Cataluña"],
+                            ["Ámbito territorial","Comarcas Gironines"],
+                            ["Comarca","Alt Empordà (Capital de la comarca)"]]
+                    }, 
+                    "humanPopulation": {
+                        "title": "Población humana", 
+                        "data": [
+                            ["Población","48875 (2024), (2532,38 hab/km2)"],
+                            ["Gentilicio","Figuerenc, Figuerenca"]]
+                    }, 
+                    "geography": {
+                        "title": "Geografia", 
+                        "data": [
+                            ["Superficie","19.3 km2"],
+                            ["Bañado por","Manol"],
+                            ["Altitud","39 m"]]
+                    }, 
+                    "descriptiveIden": {
+                        "title": "Identificadores descriptivos", 
+                        "data": [
+                            ["Código Postal",17600],
+                            ["Uso Horario","UTC+01:00 i UTC+02:00"],
+                            ["Código INE",17066],
+                            ["Código IDESCAT",170669]]
+                    }, 
+                    "webPortal": {
+                        "title": "Portal web", 
+                        "data": "https://www.figueres.cat/"
+                    }
+                }
             }, 
             "activities": {
                 "title": "Actividades", 
@@ -65,7 +141,7 @@
         }
     }, 
     "en": {
-        "itemsNavbar": [["#aboutInfo","About Figueres"],["#activities","Activities"],["#location","Location"]], 
+        "itemsNavbar": [["#aboutInfo","About Figueres"],["#activities","Activities"],["#location","Location"],["#history","History"]], 
         "sections": {
             "presentation": {
                 "title": "Discover Figueres", 
@@ -79,7 +155,42 @@
                           ["./multimedia_files/images/roadLleida.png","2 hours from Lleida"]], 
             "aboutInfo": {
                 "title": "About Figueres", 
-                "id": "aboutInfo"
+                "id": "aboutInfo", 
+                "info": {
+                    "place": {
+                        "title": "Place", 
+                        "data": [
+                            ["Country","Spain"],
+                            ["Autonomous Community","Catalonia"],
+                            ["Territorial scope","Girona region"], 
+                            ["County","Alt Empordà (Capital of the county)"]]
+                    }, 
+                    "humanPopulation": {
+                        "title": "Human population", 
+                        "data": [
+                            ["Population","48875 (2024), (2532,38 hab/km2)"],
+                            ["Demonyms","Figuerenc, Figuerenca"]]
+                    }, 
+                    "geography": {
+                        "title": "Geography", 
+                        "data": [
+                            ["Area","19.3 km2"],
+                            ["Bathed by","Manol"],
+                            ["Elevation","39 m"]]
+                    }, 
+                    "descriptiveIden": {
+                        "title": "Descriptive IDs", 
+                        "data": [
+                            ["Postal Code",17600],
+                            ["Use Timetable","UTC+01:00 i UTC+02:00"],
+                            ["IDESCAT code",17066],
+                            ["IDESCAT code",170669]]
+                    }, 
+                    "webPortal": {
+                        "title": "Website", 
+                        "data": "https://www.figueres.cat/"
+                    }
+                }
             }, 
             "activities": {
                 "title": "Activities", 
@@ -92,7 +203,7 @@
         }
     }, 
     "fr": {
-        "itemsNavbar": [["#aboutInfo","Info sur Figueres"],["#activities","Activités"],["#location","Emplacement"]], 
+        "itemsNavbar": [["#aboutInfo","Info sur Figueres"],["#activities","Activités"],["#location","Emplacement"],["#history","Histoire"]], 
         "sections": {
             "presentation": {
                 "title": "Découvrez Figueres", 
@@ -106,7 +217,42 @@
                           ["./multimedia_files/images/roadLleida.png","A 2 heures de Lleida"]], 
             "aboutInfo": {
                 "title": "Informations sur Figueres", 
-                "id": "aboutInfo"
+                "id": "aboutInfo", 
+                "info": {
+                    "place": {
+                        "title": "Administration", 
+                        "data": [
+                            ["Pays","Espagne"],
+                            ["Communauté autonome","Catalogne"],
+                            ["Zone territoriale","Province de Gérone"],
+                            ["Comarque","Alt Empordà (Capitale de la comarque)"]]
+                    }, 
+                    "humanPopulation": {
+                        "title": "Démographie", 
+                        "data": [
+                            ["Population","48875 (2024), (2532,38 hab/km2)"],
+                            ["Gentilé","Figuerenc, Figuerenca"]]
+                    }, 
+                    "geography": {
+                        "title": "Géographie", 
+                        "data": [
+                            ["Superficie","19.3 km2"],
+                            ["Baigné par","Manol"],
+                            ["Altitude","39 m"]]
+                    }, 
+                    "descriptiveIden": {
+                        "title": "Identifiants descriptifs", 
+                        "data": [
+                            ["Code postal",17600],
+                            ["Utilisation Horaire","UTC+01:00 i UTC+02:00"],
+                            ["Code INE",17066],
+                            ["Code IDESCAT",170669]]
+                    }, 
+                    "webPortal": {
+                        "title": "Site web", 
+                        "data": "https://www.figueres.cat/"
+                    }
+                }
             }, 
             "activities": {
                 "title": "Activités", 

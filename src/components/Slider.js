@@ -13,11 +13,11 @@ function Slider({data, currImg, changeImg}) {
         <div className="Slider">
             <div>
                 {currImg == 0?
-                <img alt="slider" width="100%" height="650px" src={data["image1"]} />
+                <img alt={data["image1"][1]} width="100%" src={data["image1"][0]} />
                 : 
-                <video width={width} height="650px" controls autoPlay loop>
-                    <source src={data["video"]} type="video/mp4" />
-                    El navegador no suporta el video
+                <video width={width} controls autoPlay loop>
+                    <source src={data["video"][0]} type="video/mp4" />
+                    {data["video"][1]}
                 </video>}
             </div>
             <div id="controlSlaider">

@@ -93,6 +93,10 @@ nav a.elementmenu:hover {
 
 /* SLIDER STYLES */
 
+.Slider > div:first-child {
+  height: 100%;
+}
+
 .Slider div#controlSlaider > button#prevImg {
   position: absolute;
   top: 400px;
@@ -106,8 +110,8 @@ nav a.elementmenu:hover {
 }
 
 .Slider div#controlSlaider > button {
-  padding: 10px;
-  font-size: 20px;
+  padding: 15px;
+  font-size: 25px;
   border-radius: 5%;
   border: 0px;
   background-color: var(--colorPrimary);
@@ -127,6 +131,12 @@ nav a.elementmenu:hover {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  margin: 10px 200px 10px 200px;
+}
+
+.Presentation p {
+  margin: 10px;
+  text-align: justify;
 }
 
 .Distances {
@@ -143,6 +153,13 @@ nav a.elementmenu:hover {
   width: 50px;
 }
 
+.AboutInfo > div > dl {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: left;
+}
+
 .Section {
   margin: 25px;
 }
@@ -153,7 +170,7 @@ nav a.elementmenu:hover {
 
 .iframeLocation {
   width: 100%;
-  height: 500px;
+  height: 750px;
   border: none;
 }
 
@@ -190,11 +207,24 @@ h2 {
   font-size: 20px;
 }
 
+dl {
+  margin: 0px;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dl > dt, dl > dd {
+  margin: 10px;
+}
+
 @media only screen and (max-width: 860px) {
   /* FOR MOBILE PHONE */
   .Presentation {
     display: flex;
     flex-direction: column;
+    margin: 10px 50px 10px 50px;
   }
 
   .Distances {
@@ -204,5 +234,25 @@ h2 {
 
   .Distances img {
     width: 75px;
+  }
+
+  .Slider div#controlSlaider > button#prevImg {
+    position: absolute;
+    top: 200px;
+    left: 10px;
+  }
+
+  .Slider div#controlSlaider > button#nextImg {
+    position: absolute;
+    top: 200px;
+    right: 10px;
+  }
+
+  .AboutInfo > div > dl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-left: 100px;
   }
 }

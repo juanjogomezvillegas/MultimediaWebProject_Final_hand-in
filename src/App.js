@@ -31,7 +31,7 @@ function App() {
     const slaiderImageChange = () => {
         setCurrImg(currImg == 0? 1: 0);
     };
-  
+
   return (
     <div className='App'>
       <Header data={data[lang]} lang={lang} handleLangChange={handleLangChange} />
@@ -41,7 +41,7 @@ function App() {
           <Presentation data={data[lang]["sections"]["presentation"]} />
           <Distances data={data[lang]["sections"]["distances"]} />
           <AboutInfo data={data[lang]["sections"]["aboutInfo"]} />
-          <Activities data={data[lang]["sections"]["activities"]} />
+          <Activities data={data[lang]["sections"]["activities"]} products={data["products"]} />
           <Location data={data[lang]["sections"]["location"]} />
         </div>
       </div>
