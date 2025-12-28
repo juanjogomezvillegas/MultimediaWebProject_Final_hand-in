@@ -11,10 +11,12 @@
         ["./multimedia_files/images/flagCountry.png", "flag Country"],
         ["./multimedia_files/images/flagEU.png", "flag EU"]], 
     "products": [
-        { "id": 1, "name": "Samarreta UdG", "price": 20 },
-        { "id": 2, "name": "Tassa UdG", "price": 12 },
-        { "id": 3, "name": "Adhesius UdG", "price": 5 },
-        { "id": 4, "name": "Dessuadora UdG", "price": 45 }
+        { "id": 1, "img": "./multimedia_files/images/CasaDali.jpg", "name": "Casa Natal Salvador Dalí", "time": 1 },
+        { "id": 2, "img": "./multimedia_files/images/MuseuDali.jpg", "name": "Teatre-Museu Dalí", "time": 1 },
+        { "id": 3, "img": "./multimedia_files/images/CastellSantFerran.jpg", "name": "Castell de Sant Ferran", "time": 1 },
+        { "id": 4, "img": "./multimedia_files/images/Mercat.jpg", "name": "Els Mercats", "time": 1 }, 
+        { "id": 5, "img": "./multimedia_files/images/CentreHistoric.jpg", "name": "Centre històric i comercial", "time": 1 }, 
+        { "id": 6, "img": "./multimedia_files/images/LaRambla.jpg", "name": "La Rambla", "time": 1 }
     ], 
     "ca": {
         "itemsNavbar": [["#aboutInfo","Sobre Figueres"],["#activities","Activitats"],["#location","Ubicació"], ["#history","Història"]], 

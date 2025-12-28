@@ -70,6 +70,10 @@ header > select {
   background-color: var(--colorSecundary);
 }
 
+header > select:hover {
+  cursor: pointer;
+}
+
 nav div {
   display: flex;
   justify-content: flex-start;
@@ -111,10 +115,18 @@ nav a.elementmenu:hover {
   left: 10px;
 }
 
+.Slider div#controlSlaider > button#prevImg:hover {
+  cursor: pointer;
+}
+
 .Slider div#controlSlaider > button#nextImg {
   position: absolute;
   top: 400px;
   right: 10px;
+}
+
+.Slider div#controlSlaider > button#nextImg:hover {
+  cursor: pointer;
 }
 
 .Slider div#controlSlaider > button {
@@ -182,6 +194,77 @@ nav a.elementmenu:hover {
   border: none;
 }
 
+/* ACTIVITIES STYLES */
+
+.Activities > div {
+  display: flex;
+  flex-direction: row;
+}
+
+.ProductList {
+  margin: 5px;
+  padding: 5px;
+  width: 80%;
+}
+
+.ProductCart {
+  width: 200px;
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  box-shadow: 2px 2px 0px lightgrey;
+  transition: all 1s;
+}
+
+.ProductCart img {
+  width: 200px;
+  height: 150px;
+}
+
+.ProductCart:hover {
+  border-radius: 8px;
+  box-shadow: 4px 4px 10px lightgrey;
+  transition: all 1s;
+}
+
+.ProductCart button {
+  margin: 2px;
+  padding: 5px;
+  width: 175px;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  box-shadow: 1px 1px 0px lightgrey;
+  font-weight: bold;
+  background-color: var(--colorPrimary);
+  color: var(--textColorPrimary);
+  transition: all 1s;
+}
+
+.ProductCart button:hover {
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px lightgrey;
+  transition: all 1s;
+}
+
+.Cart {
+  margin: 5px;
+  padding: 5px;
+  width: 20%;
+  border-radius: 6px;
+  background-color: var(--colorPrimary);
+  color: var(--textColorPrimary);
+}
+
+.Cart ul {
+  list-style-type: none;
+}
+
+.Cart > div {
+  text-align: justify;
+}
+
 /* FOOTER STYLES */
 
 footer {
@@ -227,6 +310,33 @@ dl > dt, dl > dd {
   margin: 10px;
 }
 
+.btnTop {
+  margin: 10px;
+  float: right;
+}
+
+.btnTop > a {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  z-index: 1;
+  margin: 25px;
+  padding: 15px;
+  border-radius: 50%;
+  background-color: var(--colorPrimary);
+  color: var(--textColorPrimary);
+  box-shadow: 0px 0px 3px 3px var(--gray);
+  text-decoration: none;
+  transition: all .5s;
+}
+
+.btnTop > a:hover {
+  cursor: pointer;
+  transform: scale(1.1) rotate(360deg);
+  box-shadow: 0px 0px 10px 5px var(--gray);
+  transition: all .5s;
+}
+
 @media only screen and (max-width: 860px) {
   /* FOR MOBILE PHONE */
   .Presentation {
@@ -262,5 +372,25 @@ dl > dt, dl > dd {
     justify-content: center;
     text-align: left;
     margin-left: 100px;
+  }
+
+  .Activities > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ProductList {
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+  }
+
+  .Cart {
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+    border-radius: 6px;
+    background-color: var(--colorPrimary);
+    color: var(--textColorPrimary);
   }
 }

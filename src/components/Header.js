@@ -7,7 +7,7 @@
  * Date: 2025-12-01
  */
 
-function Header({data, lang, handleLangChange}) {
+function Header({data, lang, handleLangChange, theme, handleThemeChange}) {
     return (
         <div id="top" aria-roledescription="section top of the page">
             <header aria-roledescription="header of the page">
@@ -16,6 +16,11 @@ function Header({data, lang, handleLangChange}) {
                     <option value="es">Castellano</option>
                     <option value="en">English</option>
                     <option value="fr">Français</option>
+                </select>
+                <select name="changeTheme" aria-label="button change theme" title="change theme" id="selChangetheme" value={theme} onChange={handleThemeChange}>
+                    <option value="theme">Default Theme</option>
+                    <option value="blood">Blood Theme</option>
+                    <option value="dark">Dark Theme</option>
                 </select>
             </header>
             <nav id="navbar" aria-label="navigation bar">

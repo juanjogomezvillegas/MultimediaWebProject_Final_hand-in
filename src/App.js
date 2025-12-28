@@ -18,10 +18,35 @@ import AboutInfo from './components/AboutInfo.js';
 import Activities from './components/Activities.js';
 import Location from './components/Location.js';
 import History from './components/History.js';
+import BtnTop from './components/BtnTop.js';
 import data from './data/data.json';
 
-function App() {
+function App({utils}) {
   document.title = data["title"];
+
+  const [themeColor, setThemeColor] = useState('#000000');
+
+  const handleThemeChange = (e) => {
+    let backgroundColor = "";
+    let textColor = "";
+    switch (e.target.value) {
+      case "default":
+        backgroundColor = "#005EB8";
+        textColor = "#ffffff";
+        break;
+      case "blood":
+        backgroundColor = "#8A0404";
+        textColor = "#ffffff";
+        break;
+      case "dark":
+        backgroundColor = "#080808";
+        textColor = "#ffffff";
+        break;
+    }
+    utils.setCssVar('--colorPrimary', backgroundColor);
+    utils.setCssVar('--textColorPrimary', textColor);
+    setThemeColor(e.target.value);
+  };
 
   const [lang, setLang] = useState("ca");
   const handleLangChange = (e) => {
@@ -29,24 +54,26 @@ function App() {
   };
 
   const [currImg, setCurrImg] = useState(0);
-    const slaiderImageChange = () => {
-        setCurrImg(currImg == 0? 1: 0);
-    };
+  const slaiderImageChange = () => {
+    setCurrImg(currImg === 0? 1: 0);
+  };
 
   return (
     <div className='App'>
-      <Header data={data[lang]} lang={lang} handleLangChange={handleLangChange} />
+      <span id='gototop'></span>
+      <Header data={data[lang]} lang={lang} handleLangChange={handleLangChange} theme={themeColor} handleThemeChange={handleThemeChange} />
       <div className='App-Content'>
         <Slider data={data["slider"]} currImg={currImg} changeImg={slaiderImageChange} />
         <div className='App-Sections'>
           <Presentation data={data[lang]["sections"]["presentation"]} />
           <Distances data={data[lang]["sections"]["distances"]} />
           <AboutInfo data={data[lang]["sections"]["aboutInfo"]} />
-          <Activities data={data[lang]["sections"]["activities"]} products={data["products"]} />
+          <Activities data={data[lang]["sections"]["activities"]} products={data["products"]} lang={lang} />
           <Location data={data[lang]["sections"]["location"]} />
           <History data={data[lang]["sections"]["history"]} />
         </div>
       </div>
+      <BtnTop top="gototop" />
       <Footer flags={data["flags"]} />
     </div>
   );

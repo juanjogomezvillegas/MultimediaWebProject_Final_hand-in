@@ -4,7 +4,7 @@
  * 
  * Authors: Juan José Gómez Villegas (u1987338@campus.udg.edu)
  * 
- * Date: 2025-12-01
+ * Date: 2025-12-28
  */
 
 function History({data}) {

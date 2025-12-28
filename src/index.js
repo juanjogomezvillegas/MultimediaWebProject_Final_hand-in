@@ -9,12 +9,13 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import * as utils from './utils.js';
 import './index.css';
 import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App utils={utils} />
   </React.StrictMode>
 );

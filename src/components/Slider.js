@@ -12,7 +12,7 @@ function Slider({data, currImg, changeImg}) {
     return (
         <div className="Slider">
             <div>
-                {currImg == 0?
+                {currImg === 0?
                 <img alt={data["image1"][1]} width="100%" src={data["image1"][0]} />
                 : 
                 <video width={width} controls autoPlay loop>

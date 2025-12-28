@@ -11,7 +11,7 @@ import React, {useState} from 'react';
 import ProductList from "./ProductList.js";
 import Cart from "./Cart.js";
 
-function Activities({data, products}) {
+function Activities({data, products, lang}) {
     const [cart,setCart] = useState([]);
     const addProduct = (product) => { // function by add product in the cart
         setCart([...cart, product]);
@@ -24,8 +24,8 @@ function Activities({data, products}) {
         <div role="tabpanel" aria-labelledby="activities" className="Section Activities">
            <h1 id={data["id"]}>{data["title"]}</h1>
            <div>
-                <ProductList products={products} onAdd={addProduct} onDel={delProduct} cart={cart} />
-                <Cart cart={cart} />
+                <ProductList products={products} onAdd={addProduct} onDel={delProduct} cart={cart} lang={lang} />
+                <Cart cart={cart} lang={lang} />
            </div>
         </div>
     );
