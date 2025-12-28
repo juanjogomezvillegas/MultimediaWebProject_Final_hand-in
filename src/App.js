@@ -17,6 +17,7 @@ import Distances from './components/Distances.js';
 import AboutInfo from './components/AboutInfo.js';
 import Activities from './components/Activities.js';
 import Location from './components/Location.js';
+import History from './components/History.js';
 import data from './data/data.json';
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
           <AboutInfo data={data[lang]["sections"]["aboutInfo"]} />
           <Activities data={data[lang]["sections"]["activities"]} products={data["products"]} />
           <Location data={data[lang]["sections"]["location"]} />
+          <History data={data[lang]["sections"]["history"]} />
         </div>
       </div>
       <Footer flags={data["flags"]} />

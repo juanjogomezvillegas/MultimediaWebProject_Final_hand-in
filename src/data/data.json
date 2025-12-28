@@ -75,6 +75,10 @@
             "location": {
                 "title": "Ubicació", 
                 "id": "location"
+            }, 
+            "history": {
+                "title": "Història", 
+                "id": "history"
             }
         }
     }, 
@@ -137,6 +141,10 @@
             "location": {
                 "title": "Ubicación", 
                 "id": "location"
+            }, 
+            "history": {
+                "title": "Historia", 
+                "id": "history"
             }
         }
     }, 
@@ -199,6 +207,10 @@
             "location": {
                 "title": "Location", 
                 "id": "location"
+            }, 
+            "history": {
+                "title": "History", 
+                "id": "history"
             }
         }
     }, 
@@ -261,6 +273,10 @@
             "location": {
                 "title": "Emplacement", 
                 "id": "location"
+            }, 
+            "history": {
+                "title": "Histoire", 
+                "id": "history"
             }
         }
     }
