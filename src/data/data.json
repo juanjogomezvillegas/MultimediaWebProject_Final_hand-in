@@ -1,7 +1,7 @@
 {
     "title": "Figueres, Girona",  
     "slider": {
-        "image1": ["./multimedia_files/images/imgSlaider.png","image 1 to Slaider"],  
+        "image1": ["./multimedia_files/images/imgSlaiderAmbQr.png","image 1 to Slaider"],  
         "video": ["./multimedia_files/videos/presentation.mp4","Browser does not support video"]
     }, 
     "flags": [
