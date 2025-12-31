@@ -7,12 +7,36 @@
  * Date: 2025-12-01
  */
 
+/* FONTS */
+
+@font-face {
+  font-family: OldNewspaperTypes;
+  src: url("../public/multimedia_files/fonts/OldNewspaperTypes.ttf");
+}
+
+@font-face {
+  font-family: Royal;
+  src: url("../public/multimedia_files/fonts/royal.ttf");
+}
+
+@font-face {
+  font-family: Olivetti;
+  src: url("../public/multimedia_files/fonts/Olivetti.ttf");
+}
+
 /* ALL STYLES */
+
+:root {
+  --fontPrimary: "Arial"
+}
+
+* {
+  font-family: var(--fontPrimary), sans-serif;
+}
 
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 15px;
@@ -20,4 +44,8 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+audio {
+  display: none;
 }

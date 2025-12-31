@@ -14,9 +14,11 @@ import Cart from "./Cart.js";
 function Activities({data, products, lang}) {
     const [cart,setCart] = useState([]);
     const addProduct = (product) => { // function by add product in the cart
+        document.getElementById("shop").play();
         setCart([...cart, product]);
     };
     const delProduct = (product) => { // function by remove product in the cart (filter by different elements to product)
+        document.getElementById("unshop").play();
         setCart(cart.filter((prod) => prod.name !== product.name));
     };
     

@@ -7,7 +7,7 @@
  * Date: 2025-12-01
  */
 
-function Header({data, lang, handleLangChange, theme, handleThemeChange}) {
+function Header({data, lang, handleLangChange, theme, handleThemeChange, font, handleFontChange}) {
     return (
         <div id="top" aria-roledescription="section top of the page">
             <header aria-roledescription="header of the page">
@@ -22,8 +22,11 @@ function Header({data, lang, handleLangChange, theme, handleThemeChange}) {
                     <option value="blood">Blood Theme</option>
                     <option value="dark">Dark Theme</option>
                 </select>
-                <select name="changeFont" aria-label="button change font" title="change font" id="selChangefont" value="" onChange="">
-                    <option value="arial">Arial</option>
+                <select name="changeFont" aria-label="button change font" title="change font" id="selChangefont" value={font} onChange={handleFontChange}>
+                    <option value="Arial">Arial</option>
+                    <option value="OldNewspaperTypes">OldNewspaperTypes</option>
+                    <option value="Royal">Royal</option>
+                    <option value="Olivetti">Olivetti</option>
                 </select>
             </header>
             <nav id="navbar" aria-label="navigation bar">

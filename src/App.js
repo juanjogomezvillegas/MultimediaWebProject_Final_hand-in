@@ -42,10 +42,20 @@ function App({utils}) {
         backgroundColor = "#080808";
         textColor = "#ffffff";
         break;
+      default:
+        backgroundColor = "#000000";
+        textColor = "#ffffff";
     }
     utils.setCssVar('--colorPrimary', backgroundColor);
     utils.setCssVar('--textColorPrimary', textColor);
     setThemeColor(e.target.value);
+  };
+
+  const [fontColor, setFont] = useState('Arial');
+
+  const handleFontChange = (e) => {
+    utils.setCssVar('--fontPrimary', e.target.value);
+    setFont(e.target.value);
   };
 
   const [lang, setLang] = useState("ca");
@@ -61,7 +71,9 @@ function App({utils}) {
   return (
     <div className='App'>
       <span id='gototop'></span>
-      <Header data={data[lang]} lang={lang} handleLangChange={handleLangChange} theme={themeColor} handleThemeChange={handleThemeChange} />
+      <Header data={data[lang]} lang={lang} handleLangChange={handleLangChange} 
+                                theme={themeColor} handleThemeChange={handleThemeChange} 
+                                font={fontColor} handleFontChange={handleFontChange} />
       <div className='App-Content'>
         <Slider data={data["slider"]} currImg={currImg} changeImg={slaiderImageChange} />
         <div className='App-Sections'>

@@ -7,18 +7,38 @@
  * Date: 2025-12-28
  */
 
+import { useState } from 'react';
+import TimeHistory from "./TimeHistory.js";
+
 function History({data}) {
+    const [currTime, setCurrTime] = useState(data["info"].length-1);
+
+    const handleNextTime = (e) => {
+        let newTime;
+        if (currTime === data["info"].length-1) {
+            newTime = 0;
+        } else {
+            newTime = currTime + 1;
+        }
+        setCurrTime(newTime);
+    };
+
+    const handlePrevTime = (e) => {
+        let newTime;
+        if (currTime === 0) {
+            newTime = data["info"].length-1;
+        } else {
+            newTime = currTime - 1;
+        }
+        setCurrTime(newTime);
+    };
+
     return (
         <div role="tabpanel" aria-labelledby="history" className="Section History">
             <h1 id={data["id"]}>{data["title"]}</h1>
-            <p>Edad Antigua (Origen de los tiempos - 701 a.C.) <br />
-               Edad Clásica (700 a.C. - 500) <br />
-               Edad Media (501 - 1299) <br />
-               Edad de la Pólvora (1300 - 1715) <br />
-               Siglo de las Luces (1716 - 1880) <br />
-               Era Industrial (1881 - 1935) <br />
-               Edad Moderna (1936 - 1968) <br />
-               Siglo de la Información (1969 - actualidad) <br /> </p>
+            <p>
+                <TimeHistory data={data["info"][currTime]} handleNextTime={handleNextTime} handlePrevTime={handlePrevTime} />
+            </p>
         </div>
     );
 }
