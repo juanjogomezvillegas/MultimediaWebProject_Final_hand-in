@@ -14,13 +14,13 @@ function ProductList({products, onAdd, onDel, cart, lang}) {
 
     let title;
     if (lang === "ca") {
-        title = "Productes Disponibles";
+        title = "Activitats Disponibles";
     } else if (lang === "es") {
-        title = "Productos Disponibles";
+        title = "Actividades Disponibles";
     } else if (lang === "en") {
-        title = "Available products";
+        title = "Available activities";
     } else if (lang === "fr") {
-        title = "Produits disponibles";
+        title = "Activités disponibles";
     }
 
     return (
