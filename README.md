@@ -8,7 +8,7 @@ Juan José Gómez Villegas (u1987338@campus.udg.edu)
 
 ### Description of the page structure (wireframe)
 
-
+![Wireframe](./public/multimedia_files/wireframe.drawio.png)
 
 ### Description of the implemented features and multimedia elements
 
