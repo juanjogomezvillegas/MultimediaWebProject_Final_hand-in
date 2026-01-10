@@ -18,7 +18,7 @@ function Header({data, lang, handleLangChange, theme, handleThemeChange, font, h
                     <option value="fr">Français</option>
                 </select>
                 <select name="changeTheme" aria-label="button change theme" title="change theme" id="selChangetheme" value={theme} onChange={handleThemeChange}>
-                    <option value="theme">Default Theme</option>
+                    <option value="default">Default Theme</option>
                     <option value="blood">Blood Theme</option>
                     <option value="dark">Dark Theme</option>
                 </select>
